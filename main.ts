@@ -1,6 +1,8 @@
 let Coin = 0
 let item = 0
 let Rock = 0
+let Paper = 0
+let Scissors = 0
 /**
  * Shake
  * 
@@ -41,8 +43,10 @@ input.onGesture(Gesture.Shake, function () {
             Rock += 1
         } else if (item == 1) {
             basic.showIcon(IconNames.Square)
+            Paper += 1
         } else {
             basic.showIcon(IconNames.Scissors)
+            Scissors += 1
         }
     }
 })
